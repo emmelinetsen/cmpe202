@@ -1,5 +1,3 @@
-package composite;
-
 public class Client {
 
     public static void runTest()
@@ -10,8 +8,9 @@ public class Client {
     
    public static void main( String [] args )
     {
-        Client c = new Client() ;
-        c.runTest() ;
+       Client c = new Client() ;
+       c.runTest() ;
+       // System.out.println("Hello!");
     }    
     
 }
