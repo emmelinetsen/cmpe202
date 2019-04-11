@@ -1,9 +1,7 @@
-import java.text.DecimalFormat;
-import java.util.Arrays;
-
 /**
- * Created by emmeline.tsen on 4/3/19.
+ * Author: Emmeline Tsen 007825649
  */
+
 abstract public class Decorator extends Leaf {
 
     private String[] options;

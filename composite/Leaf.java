@@ -1,5 +1,4 @@
 import java.text.DecimalFormat;
-import java.util.DoubleSummaryStatistics;
 
 
 public class Leaf implements Component {

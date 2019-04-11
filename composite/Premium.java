@@ -1,6 +1,7 @@
 /**
- * Created by emmeline.tsen on 4/10/19.
+ * Author: Emmeline Tsen 007825649
  */
+
 public class Premium extends Decorator {
     private String[] options;
     private Double price;

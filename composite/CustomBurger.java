@@ -1,12 +1,14 @@
 import java.util.ArrayList;
 
 /**
- * Created by emmeline.tsen on 4/3/19.
+ * Author: Emmeline Tsen 007825649
  */
+
 public class CustomBurger extends Composite{
 
     private ArrayList<Component> components = new ArrayList<Component>();
     private Double price;
+
 
     public CustomBurger(String d){
         super(d);

@@ -1,5 +1,5 @@
 /**
- * Created by emmeline.tsen on 4/10/19.
+ * Author: Emmeline Tsen 007825649
  */
 public class Sauce extends Decorator {
 

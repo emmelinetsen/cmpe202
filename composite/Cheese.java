@@ -1,8 +1,7 @@
-import java.util.Arrays;
-
 /**
- * Created by emmeline.tsen on 4/5/19.
+ * Author: Emmeline Tsen 007825649
  */
+
 public class Cheese extends Decorator{
 
 
