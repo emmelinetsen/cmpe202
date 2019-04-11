@@ -1,15 +1,13 @@
-import java.util.Arrays;
-
 /**
- * Created by emmeline.tsen on 4/5/19.
+ * Created by emmeline.tsen on 4/10/19.
  */
-public class Cheese extends Decorator{
+public class Sauce extends Decorator {
 
 
     private String[] options;
     private Double price;
 
-    public Cheese( String d ){
+    public Sauce( String d ){
         super(d);
         price = 0.00;
     }
@@ -18,16 +16,14 @@ public class Cheese extends Decorator{
         return price;
     }
 
-
     public void setOptions(String[] o){
         options = o;
-        if (o.length > 1){ // if the list of cheese options is greater than 1, charge $1 for each after
-            int cheeseOptions = o.length;
-            price = 1.00 * (cheeseOptions-1);
+        if (o.length > 1){ // if the list of sauce options is greater than 1, charge $0.75 for each after
+            int sauceOptions = o.length;
+            price = 0.75 * (sauceOptions-1);
         }
 
     }
-
 
 
     public void setDescription(){

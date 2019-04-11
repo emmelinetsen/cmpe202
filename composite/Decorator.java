@@ -4,7 +4,7 @@ import java.util.Arrays;
 /**
  * Created by emmeline.tsen on 4/3/19.
  */
-public abstract class Decorator extends Leaf {
+abstract public class Decorator extends Leaf {
 
     private String[] options;
     private Double price;
@@ -14,16 +14,12 @@ public abstract class Decorator extends Leaf {
         super(d);
     }
 
-    public String[] setOptions(String[] o){
-        return setOptions(o);
-    }
+    abstract public Double getPrice();
+    abstract public void setOptions(String[] o);
+    abstract public void setDescription();
 
-    public Double getPrice(){
-        return price;
-    }
-
-    abstract public void printDescription();
-
-
+    public void printDescription(){
+        setDescription();
+    };
 
 }

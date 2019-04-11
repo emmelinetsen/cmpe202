@@ -18,19 +18,35 @@ public class BuildOrder {
         customBurger.addChild(new Leaf("Appricot Sauce", 0.00 )); // 1 sauce free, extra +.75
         //order.addChild( customBurger );
 
-        /// USING DECORATOR
+
+        /// USING DECORATOR TO CREATE CUSTOM BURGER
         Composite customBurger2 = new CustomBurger("Build Your Own Burger");
 
-        Decorator d = new Burger("Burger Options");
-        String[] o = new String[]{"1/3 lb on a Bun", "Beef"};
-        d.setOptions(o);
+        Decorator b = new Burger("Burger");
+        String[] burgerOptions = new String[]{"1/3 lb" , "On a Bun", "Beef"};
+        b.setOptions(burgerOptions);
 
         Decorator c = new Cheese("Cheese");
-        String[] o1 = new String[]{"Cheese", "Gouda"};
-        c.setOptions(o1);
+        String[] cheeseOptions = new String[]{"Danish Blue Cheese", "Horseradish Cheddar"};
+        c.setOptions(cheeseOptions);
 
-        customBurger2.addChild(d);
+        Decorator t = new Toppings("Toppings");
+        String[] toppingOptions = new String[]{"Bermuda Red Onion", "Black Olives", "Carrot Strings", "Coleslaw"};
+        t.setOptions(toppingOptions);
+
+        Decorator p = new Premium("Premium");
+        String[] premiumOptions = new String[]{"Applewood Smoked Bacon"};
+        p.setOptions(premiumOptions);
+
+        Decorator s = new Sauce("Sauce");
+        String[] sauceOptions = new String[]{"Appricot Sauce"};
+        s.setOptions(sauceOptions);
+
+        customBurger2.addChild(b);
         customBurger2.addChild(c);
+        customBurger2.addChild(t);
+        customBurger2.addChild(p);
+        customBurger2.addChild(s);
 
         order.addChild(customBurger2);
 
